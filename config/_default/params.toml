@@ -76,16 +76,16 @@ enabled = true
 
 ## Comments
 [comments]
-enabled = false
+enabled = true
 provider = "giscus"
 
 [comments.giscus]
-repo = ""
-repoID = ""
-category = ""
-categoryID = ""
-mapping = ""
-lightTheme = ""
-darkTheme = ""
+repo = "muyang1337/muyang1337.github.io"
+repoID = "R_kgDOQqVyIw"
+category = "General"
+categoryID = "DIC_kwDOQqVyI84Cz6ib"
+mapping = "pathname"
+lightTheme = "light_tritanopia"
+darkTheme = "dark_dimmed"
 reactionsEnabled = 1
 emitMetadata = 0
