@@ -244,12 +244,12 @@ This is because I used the Hugo GitHub Actions workflow script on the GitHub mar
       HUGO_VERSION: 0.128.0
 ```
 
-That can be solved using the latest hugo version(v0.152.2 in this case), or simply using the workflow mentioned above.
+That can be solved using the latest hugo version(`v0.152.2` in this case), or simply using the workflow mentioned above.
 
 
 # The End
 
-When I first attempted to implement Hugo blog a couple of years ago, I remembered the best practice was to create a private blog repo, and use GitHub Actions to compile and deploy it to the `{github-username}.github.io` with some tedious PAT set up. Seems it's not recommended anymore. For the future improvement I think it would be `giscuz` comment style. Current `giscus` comment does not match `Stack theme` well. `giscus` provides a way to customize CSS to make it look even better. That will be another post, if there is. 
+When I first attempted to implement Hugo blog a couple of years ago, I remembered the best practice was to create a private blog repo, and use GitHub Actions to compile and deploy it to the `{github-username}.github.io` with some tedious PAT set up. Seems it's not recommended anymore. For the future improvement I think it would be `giscus` comment style. Current `giscus` comment does not match `Stack theme` well. `giscus` provides a way to customize CSS to make it look even better. That will be another post, if there is. 
 
 Reference: 
 - [Hugo Quick Start](https://gohugo.io/getting-started/)
