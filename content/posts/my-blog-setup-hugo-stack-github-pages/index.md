@@ -8,7 +8,7 @@ categories = ["Notes"]
 image = "cover.svg"
 +++
 
-# 1. Initialise Local Blog Folder
+## Initialise Local Blog Folder
 1. Install [hugo](https://gohugo.io/installation/)
 2. Create your local blog folder with basic toml setup. `hugo new site blog --format toml`
 3. Initialise the git for the blog. `cd blog && git config --global init.defaultBranch main && git init` 
@@ -18,7 +18,7 @@ image = "cover.svg"
 
 ![The structure of local folder](init_config_files.png)
 
-# 2. Connect to the Github
+## Connect to the Github
 
 1. Create a repo named `{github-username}.github.io` with `public` visibility.
 2. Set remote origin `git remote add origin git@github.com:{github-username}/{github-username}.github.io.git`
@@ -26,7 +26,7 @@ image = "cover.svg"
 
 ![Github Repo after pushing](push_to_github.png)
 
-# 3. Comment Configuration
+## Comment Configuration
 
 [giscus](https://giscus.app/) seems to be the go to option. It makes use of Github Discussion API. Hence this step has to be after Step #2.
 
@@ -95,7 +95,7 @@ reactionsEnabled = 1
 emitMetadata = 0
 ```
 
-# 4. Github Actions Build and Deploy on Github Pages
+## Build and Deploy
 
 1. Change the source from `Deploy from a branch` to `GitHub Actions`
 
@@ -247,7 +247,7 @@ This is because I used the Hugo GitHub Actions workflow script on the GitHub mar
 That can be solved using the latest hugo version(`v0.152.2` in this case), or simply using the workflow mentioned above.
 
 
-# The End
+## The End
 
 When I first attempted to implement Hugo blog a couple of years ago, I remembered the best practice was to create a private blog repo, and use GitHub Actions to compile and deploy it to the `{github-username}.github.io` with some tedious PAT set up. Seems it's not recommended anymore. For the future improvement I think it would be `giscus` comment style. Current `giscus` comment does not match `Stack theme` well. `giscus` provides a way to customize CSS to make it look even better. That will be another post, if there is. 
 
